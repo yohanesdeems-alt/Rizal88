@@ -1,0 +1,120 @@
+<!-- ===================== index.html ===================== -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RIZAL88 - Website Resmi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <div class="logo">RIZAL88</div>
+    <nav class="menu">
+      <a href="#home">Home</a>
+      <a href="#fitur">Fitur</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+    <button class="btn btn-small" onclick="openLogin()">Login</button>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <div class="container">
+    <h1>Website Resmi <span>RIZAL88</span></h1>
+    <p>Platform modern, cepat, aman, dan terpercaya untuk pengalaman terbaik.</p>
+    <div class="hero-btn">
+      <button class="btn btn-primary" onclick="openRegister()">Daftar Sekarang</button>
+      <button class="btn btn-outline">Live Chat</button>
+    </div>
+  </div>
+</section>
+
+<section id="fitur" class="section">
+  <div class="container">
+    <h2>Keunggulan RIZAL88</h2>
+    <div class="grid">
+      <div class="card">⚡<h3>Transaksi Cepat</h3><p>Proses instan tanpa menunggu lama.</p></div>
+      <div class="card">🔒<h3>Aman</h3><p>Data pengguna terlindungi sistem keamanan.</p></div>
+      <div class="card">🎧<h3>Support 24/7</h3><p>Layanan pelanggan siap membantu.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="tentang" class="section dark">
+  <div class="container">
+    <h2>Tentang Kami</h2>
+    <p class="center">RIZAL88 adalah website modern yang mengutamakan kenyamanan, kecepatan, dan keamanan pengguna.</p>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Bergabung Sekarang</h2>
+  <p>Daftar gratis dan rasakan layanan terbaik kami.</p>
+  <button class="btn btn-primary">DAFTAR</button>
+</section>
+
+<footer id="kontak">
+  <p>© 2026 RIZAL88 | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- ===================== style.css ===================== -->
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+body{background:#020617;color:#fff}
+a{text-decoration:none;color:inherit}
+
+.container{max-width:1200px;margin:auto;padding:0 16px}
+
+.header{background:#020617;border-bottom:1px solid #1e293b;position:sticky;top:0}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+.logo{font-size:24px;font-weight:bold;color:#facc15}
+.menu a{margin:0 12px;color:#cbd5f5}
+.menu a:hover{color:#facc15}
+
+.hero{padding:100px 0;text-align:center;background:linear-gradient(180deg,#0f172a,#020617)}
+.hero h1{font-size:48px;margin-bottom:16px}
+.hero span{color:#facc15}
+.hero p{color:#cbd5f5;margin-bottom:30px}
+.hero-btn button{margin:0 8px}
+
+.section{padding:80px 0}
+.section.dark{background:#020617}
+.section h2{text-align:center;margin-bottom:40px;font-size:36px}
+.center{text-align:center;color:#cbd5f5}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
+.card{background:#020617;border:1px solid #1e293b;border-radius:16px;padding:30px;text-align:center;transition:.3s}
+.card:hover{transform:translateY(-8px)}
+.card h3{margin:12px 0;color:#facc15}
+.card p{color:#cbd5f5}
+
+.cta{background:linear-gradient(135deg,#facc15,#fde047);color:#020617;text-align:center;padding:60px}
+
+.btn{padding:14px 28px;border-radius:8px;font-weight:bold;border:none;cursor:pointer}
+.btn-primary{background:#020617;color:#facc15}
+.btn-outline{background:transparent;border:2px solid #facc15;color:#facc15}
+.btn-small{padding:8px 18px;background:#facc15;color:#020617}
+
+footer{text-align:center;padding:30px;border-top:1px solid #1e293b;color:#94a3b8}
+
+@media(max-width:768px){.hero h1{font-size:34px}}
+
+
+<!-- ===================== script.js ===================== -->
+function openRegister(){
+  alert('Form pendaftaran belum aktif');
+}
+
+function openLogin(){
+  alert('Form login belum aktif');
+}
+
+console.log('Website RIZAL88 siap digunakan');
